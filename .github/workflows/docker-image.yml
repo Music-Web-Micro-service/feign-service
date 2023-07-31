@@ -79,9 +79,11 @@ jobs:
             ]
 #       - name: Log in to GitHub Packages
 #         run: echo "${{ env.GITHUB_TOKEN }}" | gh auth login --with-token
-
+      -
+        name: mvn permssion
+        run: chmod +x ./mvnw
       - name: Publish to GitHub Packages
-        run: mvn deploy -Dmaven.test.skip=true
+        run: ./mvnw deploy -Dmaven.test.skip=true
         env:
           GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
 
