@@ -77,8 +77,6 @@ jobs:
                 }
               }
             ]
-          output_file: ~/.m2/settings.xml
-
       - name: Log in to GitHub Packages
         run: echo "${{ env.GITHUB_TOKEN }}" | gh auth login --with-token
 
