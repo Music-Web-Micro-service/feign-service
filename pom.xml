@@ -16,8 +16,8 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>Music-Web-Micro-service</name>  <!-- 改 OWNER -->
-            <url>https://maven.pkg.github.com/Music-Web-Micro-service/feign-service</url>  <!-- 改 OWNER、REPOSITORY -->
+            <name>Music-Web-Micro-service</name>
+            <url>https://maven.pkg.github.com/Music-Web-Micro-service/feign-service</url>
         </repository>
     </distributionManagement>
     <properties>
