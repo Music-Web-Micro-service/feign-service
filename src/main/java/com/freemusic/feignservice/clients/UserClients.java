@@ -12,7 +12,10 @@ public interface UserClients {
 
     @GetMapping("/user/search")
     UserDto findByUsername(@RequestParam("email") String username);
+    @GetMapping("/user/seaarch")
 
-//    @PostMapping("/user/search")
-//    User signupArtist(@PathVariable("user_id") int user_id);
+    UserDto findByUsernaame(@RequestParam("email") String username);
+
+   // @PostMapping("/user/search")
+   // User signupArtist(@PathVariable("user_id") int user_id);
 }
