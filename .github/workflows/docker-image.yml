@@ -80,7 +80,7 @@ jobs:
           output_file: ~/.m2/settings.xml
 
       - name: Log in to GitHub Packages
-        run: echo "${{ GITHUB_TOKEN }}" | gh auth login --with-token
+        run: echo "${ GITHUB_TOKEN }" | gh auth login --with-token
 
       - name: Publish to GitHub Packages
         run: mvn deploy -Dmaven.test.skip=true
