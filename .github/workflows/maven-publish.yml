@@ -36,4 +36,4 @@ jobs:
       - name: Publish to GitHub Packages
         run: ./mvnw deploy -Dmaven.test.skip=true -DuniqueVersion=false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Use the GITHUB_TOKEN for Maven authentication as well
+          GITHUB_TOKEN: ${{ secrets.TOKEN }} # Use the GITHUB_TOKEN for Maven authentication as well
